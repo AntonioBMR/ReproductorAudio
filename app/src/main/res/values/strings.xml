@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ReproductorAudio</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="grabando">Grabando</string>
+    <string name="borrar">borrar</string>
+    <string name="salir">salir</string>
+    <string name="guardar">guardar</string>
+    <string name="grabar">grabar</string>
+    <string name="agrL">añadir lista</string>
+    <string name="grabacionG">grabacion guardada</string>
+    <string name="volver">volver</string>
+    <string name="escuchar">escuchar</string>
+    <string name="action_settings">Settings</string>
+
+</resources>

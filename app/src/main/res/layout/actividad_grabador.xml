@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.antonio.android.grabadorreproductordeaudio.Grabador">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:id="@+id/btgrabar"
+                android:onClick="grabar"
+                android:background="@android:drawable/ic_btn_speak_now" />
+
+            <Button
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:id="@+id/btparar"
+                android:onClick="parar"
+                android:background="@android:drawable/ic_media_pause" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvgrabar"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/guardar"
+                android:id="@+id/btguardar"
+                android:onClick="guardar"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/borrar"
+                android:id="@+id/btborrar"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:onClick="borrar" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/volver"
+            android:onClick="volver"
+            android:id="@+id/btVolver" />
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contextual"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Main"
+    >
+    <item android:id="@+id/borrar"
+        android:title="@string/borrar"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+    <item android:id="@+id/escuchar"
+        android:title="@string/escuchar"
+        />
+
+</menu>

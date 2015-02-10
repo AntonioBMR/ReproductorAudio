@@ -1,0 +1,117 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:orientation="vertical"
+>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btPauseService"
+            android:layout_below="@+id/btStopService"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:onClick="pause"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@android:drawable/ic_media_pause" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="anterior"
+            android:id="@+id/btAtras"
+            android:layout_weight="1"
+            android:background="@android:drawable/ic_media_previous" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btPlay"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:onClick="play"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@android:drawable/ic_media_play" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="siguiente"
+            android:id="@+id/btSgt"
+            android:layout_weight="1"
+            android:background="@android:drawable/ic_media_next" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btStop"
+            android:onClick="stop"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btPlay"
+            android:layout_toEndOf="@+id/btPlay"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@android:drawable/ic_menu_close_clear_cancel" />
+
+    </LinearLayout>
+
+    <SeekBar
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar"
+        android:layout_below="@+id/btStopService"
+        android:indeterminate="false"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvReproduccion" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/agrL"
+        android:id="@+id/btAdd"
+        android:onClick="add"
+        android:layout_below="@+id/btPlay"
+        android:layout_toLeftOf="@+id/btStop"
+        android:layout_toStartOf="@+id/btStop"
+        android:layout_gravity="center" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/volver"
+        android:id="@+id/btStopService"
+        android:layout_below="@+id/btAdd"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="pararServicio"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/tvArchivo"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView" />
+
+</LinearLayout>
